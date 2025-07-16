@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 2</title>
+    <style>
+        .parent{
+            display: grid;
+            grid-template-rows: repeat(6,60px);
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        .child{
+            background-color: rgb(112, 112, 252);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child" style="grid-column: 1/4;">8</div>
+        <div class="child" style="grid-column: 1/3;">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child" style="grid-column: 2/4; grid-row: 3/6;">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child" style="grid-column: 1/4">1</div>
+    </div>
+</body>
+</html>
