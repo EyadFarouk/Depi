@@ -93,6 +93,53 @@ main{
     color: gray;
 }
 
+.first-card-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #171719CC;
+    gap: 30px;
+}
+
+.semi-card{
+    display: flex;
+    width: 47%;
+    align-items: center;
+    gap: 30px;
+}
+
+.buy{
+    font-size: 12px;
+    text-align: center;
+    border: #DEC700 1px solid;
+    border-radius: 2px;
+    background-color: #DEC700;
+    color: white;
+}
+
+.card-color{
+    background-color: #18181A;
+}
+
+@media only screen and (max-width: 928px){
+    .first-card-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        background-color: #171719CC;
+        gap: 30px;
+    }
+
+    .semi-card{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
 @media only screen and (max-width: 600px){
     .nav-links {
         display: none;
@@ -128,5 +175,32 @@ main{
         font-size: 64px; 
         width: 300px; 
         margin: 0;
+    }
+
+    .first-card-section{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0C0C0C;
+        row-gap: 30px;
+    }
+
+    .semi-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #171719CC;
+        gap: 30px;
+    }
+
+    .buy{
+        width: 96px;
+        height: 37px;
+        border: #DEC700 1px solid;
+        border-radius: 2px;
+        background-color: #DEC700;
+        color: white;
+        margin-right: 0px;
     }
 }
