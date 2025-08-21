@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS</title>
+</head>
+<body>
+    <script>
+        // 13. Basic Mathematical Operations
+        function Task13_MathOP(){
+            let a = prompt("Enter the first number");
+            let b = prompt("Enter the second number");
+            let op = prompt("Enter the operation");
+            let sum = 0;
+            if(op=="/")
+                sum = parseFloat(a) / parseFloat(b); 
+            else if(op=="*")
+                sum = parseFloat(a) * parseFloat(b); 
+            else if(op=="+")
+                sum = parseFloat(a) + parseFloat(b); 
+            else if(op=="-")
+                sum = parseFloat(a) - parseFloat(b);
+            else
+                alert("The operation is invalid");
+            alert("the outcome is: " + sum);
+            return sum;
+        }
+
+        function Task14_Sqr(){
+            let a ;
+            do{
+                a = prompt("Enter the number");
+                a = parseInt(a)
+            }while(!Number.isInteger(a))
+            if(Math.sqrt(a)*Math.sqrt(a)===a){
+                alert("Square root: " + Math.sqrt(a));
+            }else{
+                alert("Power it by two: " + Math.pow(a,2));
+            }
+        }
+
+        function Task15_mul(n,x){
+            let arr=[];
+            for (let i = 1; i <= x; i++) {
+                arr.push(n*i);
+            }
+            return arr;
+        }
+
+        function Task16_RmSpc(){
+            let a =prompt("enter a string");
+            a = a.replace(/\s/g, '');
+            return a;
+        }
+
+        function skipThrees(arr){
+            for (let index = 0; index < arr.length; index++) {
+                if(arr[index]%3==0)
+                    continue;
+                console.log(arr[index]);                
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+main{
+    background-image: linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.3)
+        ), url(Assets/2e3148355fb298e3fbc35a8747abb2f1591b3289.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.mainTextColor{
+    color: #F97316;
+}
+
+.mainBtnColor{
+    background-color: #F97316;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
