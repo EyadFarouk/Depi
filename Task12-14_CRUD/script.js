@@ -11,6 +11,11 @@ let tbody = document.querySelector("tbody");
 let submit = document.querySelector("button");
 console.log(submit);
 
+let time = document.getElementById("time");
+setInterval(() => {
+    let date = new Date();
+    time.innerHTML = date.toLocaleTimeString() + " " + date.toLocaleDateString();
+}, 1000);
 
 let products;
 
